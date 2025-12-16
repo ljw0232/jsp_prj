@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+a{
+	color: #333;
+	text-decoration:none
+}
+
+a:hover{
+	text_decoration:underline
+}
+
+inputbox{
+	height: 20px; border: 1"
+}
