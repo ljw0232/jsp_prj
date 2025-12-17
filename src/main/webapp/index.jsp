@@ -64,7 +64,7 @@ $(function() {
 					<br>
 					</c:when>
 					<c:otherwise>
-					<a href = "login/loginFrm.jsp">로그인</a>
+					<a href = "${CommonURL}/login/loginFrm.jsp">로그인</a>
 					</c:otherwise>
 					</c:choose>
 					<a href = "${CommonURL}/board/boardList.jsp">게시판</a>

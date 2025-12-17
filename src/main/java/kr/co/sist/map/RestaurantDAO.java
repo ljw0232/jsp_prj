@@ -40,9 +40,9 @@ public class RestaurantDAO {
 			// 4. 쿼리문 생성 객체 얻기
 			StringBuilder selectRestaurant = new StringBuilder();
 			selectRestaurant
-			.append("	select	rest_num, rest_name, menu, lat, lng, input_date		")
-			.append("	from		restaurant										")
-			.append("	where		id = ?											");
+			.append("	select	rest_num, rest_name, menu, lat, lng, input_date	")
+			.append("	from	restaurant										")
+			.append("	where	id = ?											");
 			
 			pstmt = con.prepareStatement(selectRestaurant.toString());
 			// 5. 바인드 변수 값 설정
@@ -56,6 +56,11 @@ public class RestaurantDAO {
 			while(rs.next()) {
 				rDTO = new RestaurantDTO();
 				rDTO.setRest_num(rs.getInt("rest_num"));
+				rDTO.setRest_name(rs.getString("rest_name"));
+				rDTO.setMenu(rs.getString("menu"));
+				rDTO.setLat(rs.getDouble("lat"));
+				rDTO.setLng(rs.getDouble("lng"));
+				rDTO.setInput_date(rs.getDate("input_date"));
 				list.add(rDTO);
 			} // end while
 		} finally {
