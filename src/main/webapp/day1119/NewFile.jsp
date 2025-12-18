@@ -12,15 +12,15 @@
 <meta name="description" content="">
 <title>JSP 템플릿</title>
 
-<link rel="shortcut icon" href="http://192.168.10.70/jsp_prj/common/images/favicon.ico">
+<link rel="shortcut icon" href="${CommonURL}/common/images/favicon.ico">
 
-<script src="http://192.168.10.70/jsp_prj/common/js/color-modes.js"></script>
+<script src="${CommonURL}/common/js/color-modes.js"></script>
 <!-- bootstrap CDN -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 <meta name="theme-color" content="#712cf9">
-<link href="http://192.168.10.70/jsp_prj/common/css/carousel.css" rel="stylesheet">
+<link href="${CommonURL}/common/css/carousel.css" rel="stylesheet">
 <style>
 .bd-placeholder-img {
 	font-size: 1.125rem;
@@ -235,7 +235,7 @@ $(function() {
 			<div class="row featurette">
 				<div class="col-md-7">
 				<a href = "<%= iDTO.getUrl() %>" target = "blank">
-					<img src = "http://192.168.10.70/jsp_prj/common/images/<%= iDTO.getImg() %>">
+					<img src = "${CommonURL}/common/images/<%= iDTO.getImg() %>">
 				</a>
 				</div>
 			</div>
@@ -244,7 +244,7 @@ $(function() {
 			<hr class="featurette-divider">
 			<div class="row featurette">
 				<div class="col-md-7">
-					<img src = "http://192.168.10.70/jsp_prj/common/images/james.png">
+					<img src = "${CommonURL}/common/images/james.png">
 					<br>
 					허허허! 자네 데이터나 먼저 넣어보시게!!
 			<% } // end if %>

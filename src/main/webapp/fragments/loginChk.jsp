@@ -8,7 +8,7 @@ if(new Random().nextBoolean()) {
 	sessionId = "min";
 } else {
 // 없다면 로그인 페이지로 이동
-	response.sendRedirect("http://192.168.10.70/jsp_prj/login/loginFrm.jsp");
+	response.sendRedirect("${CommonURL}/login/loginFrm.jsp");
 	return;
 } // end else
 	
