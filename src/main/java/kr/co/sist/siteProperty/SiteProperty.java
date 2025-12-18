@@ -31,12 +31,13 @@ public class SiteProperty {
 				spVO = new SitePropertyVO(
 						rs.getString("protocol"),
 						rs.getString("server_name"),
-						rs.getString("context_root"),
+						rs.getString("context_root") == null ? "" : rs.getString("context_root"),
 						rs.getString("manage_path"),
 						rs.getString("key"),
 						rs.getString("title"));
 				
 			} // end if
+			
 		} catch(SQLException se) {
 			se.printStackTrace();
 		} // end try ~ catch

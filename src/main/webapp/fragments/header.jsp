@@ -13,10 +13,10 @@
 		<div class="collapse navbar-collapse" id="navbarCollapse">
 			<ul class="navbar-nav me-auto mb-2 mb-md-0">
 				<li class="nav-item"><a class="nav-link active"
-					aria-current="page" href="http://localhost/jsp_prj/movie/movie_list.jsp">Home</a></li>
-				<li class="nav-item"><a class="nav-link" href="http://localhost/jsp_prj/day1126/use_session_a.jsp">로그인</a></li>
-				<li class="nav-item"><a class="nav-link" href="http://localhost/jsp_prj/member/member_join_form.jsp">회원가입</a></li>
-				<li class="nav-item"><a class="nav-link" href="http://localhost/jsp_prj/movie/movie_list.jsp">영화목록</a></li>
+					aria-current="page" href="${CommonURL}/movie/movie_list.jsp">Home</a></li>
+				<li class="nav-item"><a class="nav-link" href="${CommonURL}/day1126/use_session_a.jsp">로그인</a></li>
+				<li class="nav-item"><a class="nav-link" href="${CommonURL}/member/member_join_form.jsp">회원가입</a></li>
+				<li class="nav-item"><a class="nav-link" href="${CommonURL}/movie/movie_list.jsp">영화목록</a></li>
 				<!-- 
 				주소는 가급적 상대 주소가 아닌 URL로 설정하는 것이 좋다.
 				<li class="nav-item"><a class="nav-link" href="../member/member_join_form.jsp">회원가입</a></li>

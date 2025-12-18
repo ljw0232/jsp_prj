@@ -12,9 +12,9 @@
 <title>JSP 템플릿</title>
 
 <link rel="shortcut icon"
-	href="http://192.168.10.70/jsp_prj/common/images/favicon.ico">
+	href="${CommonURL}/common/images/favicon.ico">
 
-<script src="http://192.168.10.70/jsp_prj/common/js/color-modes.js"></script>
+<script src="${CommonURL}/common/js/color-modes.js"></script>
 <!-- bootstrap CDN -->
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -27,7 +27,7 @@
 	crossorigin="anonymous"></script>
 
 <meta name="theme-color" content="#712cf9">
-<link href="http://192.168.10.70/jsp_prj/common/css/carousel.css"
+<link href="${CommonURL}/common/css/carousel.css"
 	rel="stylesheet">
 <style>
 .bd-placeholder-img {
